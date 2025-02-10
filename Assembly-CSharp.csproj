@@ -65,10 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\PlayerHealth.cs" />
+    <Compile Include="Assets\Script\GameplayUI.cs" />
     <Compile Include="Assets\Script\FinishLine.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Coin.cs" />
-    <Compile Include="Assets\Script\PlayerMovement1.cs" />
+    <Compile Include="Assets\Script\PlayerMovements.cs" />
     <Compile Include="Assets\Script\SceneMove.cs" />
     <Compile Include="Assets\Script\WaterMovement.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />

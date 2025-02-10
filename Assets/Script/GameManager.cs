@@ -13,9 +13,12 @@ public class GameManager : MonoBehaviour
     public GameObject winPanel;
     public PlayerMovements playerMovement;
 
+    public GameplayUI gameplayUI;
+
     void Start()
     {
-
+        gameplayUI.DisplayCoins();
+        gameplayUI.DisplayHealth();
     }
 
     // Update is called once per frame
@@ -31,17 +34,20 @@ public class GameManager : MonoBehaviour
             losePanel.SetActive(true);
             playerMovement.enabled = false;
         }
+
     }
 
 
     public void CoinsGet()
     {
         coinsHave++;
+        gameplayUI.DisplayCoins();
     }
 
     public void HealthDecrease(int decrease)
     {
         health = health - decrease;
+        gameplayUI.DisplayHealth();
     }
 
     public void Finish()
